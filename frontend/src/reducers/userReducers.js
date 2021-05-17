@@ -24,6 +24,8 @@ export const userSigninReducer = (state= {},action) => {
             return {loading:false, error: action.payload}
           
         case USER_SIGNOUT :
+         console.log(state)
+
             return {}
         default:
              return state
